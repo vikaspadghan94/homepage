@@ -1,0 +1,160 @@
+.plans-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.plan {
+  margin-bottom: 2rem;
+}
+
+.plan h4 {
+  font-size: 1.2rem;
+  word-spacing: 2px;
+  color: tomato;
+  padding-bottom: 15px;
+}
+
+.plan h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  position: relative;
+}
+
+.plan h2 span.rectangle-one,
+.plan h2 span.rectangle-two {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.plan h2 span.rectangle-one {
+  width: 20px;
+  height: 1.5rem;
+  background-color: #EB5757;
+  margin-right: 0.5rem;
+  rotate: 45deg;
+  margin-right: 5rem;
+}
+
+.plan h2 span.rectangle-two {
+  width: 20px;
+  height: 1.5rem;
+  background-color: #F2C94C;
+  margin-left: 0.5rem;
+  rotate: 45deg;
+  margin-top: -5rem;
+  margin-left: 5rem;
+}
+
+.plan h2 span.first {
+  color: #f54748;
+  font-weight: bold;
+}
+
+.plan h2 span.second {
+  color: #fdc55e;
+  font-weight: bold;
+}
+
+.plan h2 span.third {
+  color: #f54748;
+  font-weight: bold;
+}
+
+.plan-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.plan-item img,
+.plan-item-right img {
+  padding-bottom: 1rem;
+}
+
+.plan-item,
+.plan-item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.plan-item img,
+.plan-item-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.plan-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.plan-item h3,
+.plan-item-right h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.plan-item p,
+.plan-item-right p {
+  margin: 0.5rem 0 0 0;
+}
+
+.plan-item-right {
+  align-items: center;
+  text-align: center;
+}
+
+.plan-item-right .plan-content {
+  align-items: center;
+}
+
+.plan-item .plan-content {
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .plan-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .plan-item,
+  .plan-item-right {
+    max-width: 100%;
+  }
+
+  .plan h2 {
+    font-size: 2.5rem;
+  }
+
+  .plan h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plan h2 {
+    font-size: 2rem;
+  }
+
+  .plan h4 {
+    font-size: 0.9rem;
+  }
+
+  .plan-row {
+    padding: 0;
+  }
+}

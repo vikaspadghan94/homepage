@@ -1,0 +1,227 @@
+.header {
+  background: linear-gradient(to right, #ffffff, #fff6e4);
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-contents {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5vw;
+  width: 50%;
+  animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+  font-weight: 600;
+  color: black;
+  font-size: max(4.5vw, 22px);
+  padding-bottom: 2.5rem;
+}
+
+h2 .just {
+  color: #625f5f;
+}
+
+h2 .price {
+  color: rgb(245, 54, 21);
+}
+
+.header-contents p {
+  font-size: 1.2rem;
+}
+
+.offer {
+  color: blue;
+}
+
+.header-contents-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 34vw;
+  position: relative;
+}
+
+.header-contents-left img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.pizza img {
+  width: 52%;
+    height: auto;
+    position: relative;
+    top: -12rem;
+    left: 5rem;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  align-self: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.download button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #f33737;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download button:hover {
+  background-color: #ee2424;
+}
+
+.download h3 {
+  top: 44rem;
+  left: 25rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+.download h3 svg {
+  width: 3rem;
+  margin-right: 8px;
+  background-color: white;
+  box-shadow: 5px 5px 4px rgba(18, 174, 156, 0.2);
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 20px;
+  color: #f54748;
+}
+
+@media (max-width: 768px) {
+  .header-main {
+      flex-direction: column;
+  }
+
+  .header-contents {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+  }
+
+  .header-contents-left {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .pizza img {
+      width: 30%;
+      top: -0.2rem;
+      left: 17rem;
+      position: absolute;
+  }
+  
+  .header-contents h2 {
+      font-size: 6vw;
+      padding-bottom: 1.5rem;
+  }
+
+  .header-contents p {
+      font-size: 1rem;
+  }
+
+  .download {
+      align-self: center;
+      padding: 10px;
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .download button {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .download h3 {
+      font-size: 14px;
+  }
+
+  .download h3 svg {
+      width: 2rem;
+      margin-right: 0;
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-contents h2 {
+      font-size: 8vw;
+      padding-bottom: 1rem;
+  }
+
+  .header-contents p {
+      font-size: 0.9rem;
+  }
+
+  .download {
+      padding: 5px;
+  }
+
+  .download button {
+      padding: 8px;
+      font-size: 12px;
+  }
+
+  .download h3 {
+      font-size: 12px;
+  }
+
+  .download h3 svg {
+      width: 1.5rem;
+      font-size: 16px;
+  }
+}
+
+
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1700;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
